@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(95, 218, 177);
+}
+.inactive {
+    display: none;
+}
+header h1, header p{
+    text-align: center;
+    margin: 40px 0;
+}
+header p {
+    font-size: 20px;
+}
+.mainSection{
+    display: grid;
+    grid-template: 50px 50px 50px / 250px;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+}
+.generationZoneStyles {
+    display: grid;
+    grid-template: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.mainSection label, .generationZone label{
+    justify-self: center;
+}
+.mainSection input , .generationZone input{
+    justify-self: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    background-color: lightcyan;
+}
+.mainSection button, .generationZone button ,.displaygrid button {
+    justify-self: center;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.mainSection button:hover, .generationZone button:hover, .displaygrid button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 6px 10px 23px 4px rgba(130,130,130,0.   7);
+    -moz-box-shadow: 6px 10px 23px 4px rgba(130,130,130,0.  7);   
+    box-shadow: 6px 10px 23px 4px rgba  (130,130,130,0.7);
+    background-color: darkgray;
+}
+.displaygrid{
+    display: grid;
+    grid-template: repeat(2,50px) / repeat(4,160px);
+    justify-content: center; 
+}
+.lastSectionAnswer {
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    text-align: center;
+}
+@media (max-width:630px){
+    .displaygrid{
+        display: grid;
+        grid-template: repeat(4,50px) / 50px;
+        justify-content: center;
+    }
+}

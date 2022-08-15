@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALISIS DE DATOS</title>
+    <link rel="stylesheet" href="./salarios.css">
+</head>
+<body>
+    <header>
+        <h1>CALCULA LA OPERACION QUE DESEES</h1>
+        <P class="subtitle">Ingresa una cantidad de números para realizar cada uno de los cálculos (Máximo 50 números).</P>
+    </header>
+    <main class="mainSection">
+        <label class="labelInput" for="cantidadNumeros">Ingresa la cantidad de números: </label>
+        <input type="number" id="cantidadNumeros" placeholder="Cantidad de números" >
+        <button class="buttonNext" type="button">Siguiente</button>
+        <button class="buttonProcess inactive" type="button">Siguiente</button>
+        <button class="reloadPage inactive" type="button">Reiniciar</button>
+    </main>
+    <section class="generationZone inactive"></section>
+    <section class="buttonSection inactive">
+        <button class="buttonMedia">Media</button>
+        <button class="buttonMediana">Mediana</button>
+        <button class="buttonModa">Moda</button>
+        <button class="buttonOrder">Datos Ordenados</button> 
+    </section>
+    <section class="lastSectionAnswer"></section>
+    <script src="./platziMath.js"></script>
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+    <script src="./manipulacionDOM.js"></script>
+</body>
+</html>
